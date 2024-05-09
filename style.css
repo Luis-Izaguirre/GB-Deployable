@@ -302,3 +302,28 @@ footer a:hover {
     color: #333;
     user-select: none;
 }
+
+.key {
+    width: 40px; 
+}
+
+.wide-key {
+    width: 60px;
+}
+
+.wider-key {
+    width: 80px; 
+}
+
+.key-row .key:last-child {
+    margin-right: 0;
+}
+
+.keyboard .key-row {
+    justify-content: flex-start; 
+}
+
+.key-row:nth-child(5) .key:nth-child(3) {
+    flex-grow: 1;
+}
+

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>  
         <style type="text/css">@import url(&quot;css/GameBoy.css&quot;);</style>
         <script type="text/javascript">
     var DEBUG_MESSAGES = false;
@@ -27,7 +27,7 @@
     <body>
         <nav class="navbar">
             <a href="index.html" class="navbar-brand">RePlay</a>
-        
+
             <ul class="navbar-links">
                 <li><a href="roms.html" class="roms">ROMS</a></li>
                 <li><a href="emulator.html" class="emu">Emulators</a></li>
@@ -35,56 +35,65 @@
                 <li><a href="register.html" class="signup">Sign Up</a></li>
             </ul>
         </nav>
+        <style>
+            .navbar {
+                font-family: 'Consolas', 'Monaco', 'Lucida Console', 'Courier New', monospace;
+                font-size: 30px;
+            }
+            .navbar-brand {
+                font-family: 'Consolas', 'Monaco', 'Lucida Console', 'Courier New', monospace;
+                font-size: 30px;
+            }
+        </style>
+
+        <div class="keyboard-controls" style="color: white; font-weight: bold; font-family: 'Consolas', 'Monaco', 'Lucida Console', 'Courier New', monospace; font-size: 30px; padding-left: 45px;">
+            <p>Keyboard Controls:</p>
+            <ul>
+            <li><strong>Z</strong> - A button</li>
+            <li><strong>X</strong> - B button</li>
+            <li><strong>A</strong> - L button</li>
+            <li><strong>S</strong> - R button</li>
+            <li><strong>Enter</strong> - Start</li>
+            <li><strong>Arrow keys</strong> - Directional pad</li>
+            </ul>
+        </div>
 
         <div id="GameBoy" class="window">
             <div class="menubar">
-                <span id="GameBoy_file_menu">File</span>
-                <span id="GameBoy_settings_menu">Settings</span>
-                <span id="GameBoy_view_menu">View</span>
-                <span id="GameBoy_about_menu">About</span>
+            <span id="GameBoy_file_menu">File</span>
+            <span id="GameBoy_settings_menu">Settings</span>
+            <span id="GameBoy_view_menu">View</span>
+            <span id="GameBoy_about_menu">About</span>
             </div>
             <div id="gfx">
-                <canvas id="mainCanvas"/>
-                <span id="title"></span>
-                <span id="port_title"></span>
+            <canvas id="mainCanvas" style="width: 590px; height: 422px;"></canvas>
+            <span id="title"></span>
+            <span id="port_title"></span>
             </div>
         </div>
-        
         <div class="keyboard">
-            <div class="key-row">
-                <span class="key">Q</span>
-                <span class="key">W</span>
-                <span class="key">E</span>
-                <span class="key">R</span>
-                <span class="key">T</span>
-                <span class="key">Y</span>
-                <span class="key">U</span>
-                <span class="key">I</span>
-                <span class="key">O</span>
-                <span class="key">P</span>
-            </div>
-            <div class="key-row">
-                <span class="key">A</span>
-                <span class="key">S</span>
-                <span class="key">D</span>
-                <span class="key">F</span>
-                <span class="key">G</span>
-                <span class="key">H</span>
-                <span class="key">J</span>
-                <span class="key">K</span>
-                <span class="key">L</span>
-            </div>
-            <div class="key-row">
-                <span class="key">Z</span>
-                <span class="key">X</span>
-                <span class="key">C</span>
-                <span class="key">V</span>
-                <span class="key">B</span>
-                <span class="key">N</span>
-                <span class="key">M</span>
-            </div>
-        </div>
-        
+    <div class="key-row">
+        <span class="key wide-key" style="background-color: #eab308">Esc</span>
+    </div>
+    <div class="key-row">
+        <span class="key" style="background-color: #0ea5e9">Q</span> 
+        <span class="key" style="background-color: #0ea5e9">Y</span>
+        <span class="key" style="background-color: #0ea5e9">Z</span>
+    </div>
+    <div class="key-row">
+        <span class="key" style="background-color: #EF4444">J</span>
+        <span class="key" style="background-color: #EF4444">X</span> 
+        <span class="key wide-key" style="background-color: #4ade80">Enter</span>
+    </div>
+    <div class="key-row">
+        <span class="key wider-key" style="background-color: #4ade80">Shift</span>
+    </div>
+    <div class="key-row">
+        <span class="key wider-key">D-PAD</span>
+    </div>
+</div>
+
+
         <div id="terminal" class="window">
             <div id="terminal_output"/>
             <div class="button_rack">

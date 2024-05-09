@@ -142,7 +142,7 @@ div#gfx {
 	background-image: -moz-linear-gradient(top, rgb(200, 50, 50), rgb(200, 75, 150));
 	background-image: -o-linear-gradient(top, rgb(200, 50, 50), rgb(200, 75, 150));
 	background-image: linear-gradient(top, rgb(200, 50, 50), rgb(200, 75, 150)); */
-	background-size: cover;
+	background-size: 590px 422px;;
 }
 body > div#fullscreenContainer {
 	position: absolute;	/*Fallback here if fixed isn't supported*/
@@ -378,8 +378,8 @@ div.window > div.button_rack > button.center {
 }
 
 #GameBoy {
-  width: 460px;
-  height: 306px;
+  width: 590px;;
+  height: 422px;;
   border: 10px solid #1E0B41;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
