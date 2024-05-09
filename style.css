@@ -1,125 +1,134 @@
-/* Header and Navigation */
+/* style.css */
+
 body {
     font-family: "Press Start 2P", system-ui;
     margin: 0;
     padding: 0;
     background-color: #250E4F;
+} 
+
+.button {
+  background-color: #250E4F;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button + .button {
+    margin-left: 10px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1E0B41;
-    color: #fff;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E0B41;
+  color: #fff;
+  padding: 20px;
 }
 
 .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-    background-color: #250E4F;
-    color: white;
-    font-family: "Kode Mono", monospace;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size:16px;
+  background-color: #250E4F;
+  color: white;
+  font-family: "Kode Mono", monospace;
 }
 
 .search-bar button {
-    padding: 10px 20px;
-    background-color: #250E4F;
-    color: #fb923c;
-    border: none;
-    border-radius: 3px;
-    margin-left: 5px;
-    font-family: "Kode Mono", monospace;
-    font-weight: bold;
-    border-bottom-style: solid;
+  padding: 10px 20px;
+  background-color: #250E4F;
+  color: #fb923c;
+  border: none;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-family: "Kode Mono", monospace;
+  font-weight: bold;
+  border-bottom-style: solid;
 }
 
-.search-bar button:hover {
-    background-color: #fb923c;
-    color: white;
-    border-color: #fb923c;
+.search-bar button:hover{
+  background-color: #fb923c;
+  color: white;
+  border-color: #fb923c;
 }
 
 .navbar-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links li {
-    margin-right: 10px;
-    font-weight: bold;
-    text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .navbar-links li a {
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: #250E4F;
-    padding: 10px 20px;
-    font-family: "Kode Mono", monospace;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #250E4F;
+  padding: 10px 20px;
+  font-family: "Kode Mono", monospace;
 }
 
-.roms {
-    color: #EF4444;
-    border-bottom-style: solid;
+.roms{
+  color: #EF4444;
+  border-bottom-style: solid;
 }
 
-.roms:hover {
-    background-color: #EF4444;
-    color: white;
-    border-color: #EF4444;
+.roms:hover{
+  background-color: #EF4444;
+  color: white;
+  border-color: #EF4444;
 }
 
-.emu {
-    color: #4ade80;
-    border-bottom-style: solid;
+.emu{
+  color: #4ade80;
+  border-bottom-style: solid;
+}
+.emu:hover{
+  background-color: #4ade80;
+  color: white;
+  border-color: #4ade80;
+}
+.login{
+  color: #0ea5e9;
+  border-bottom-style: solid;
+}
+.login:hover{
+  background-color: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+}
+.signup{
+  color: #eab308;
+  border-bottom-style: solid;
+}
+.signup:hover{
+  background-color: #eab308;
+  color: white;
+  border-color: #eab308;
 }
 
-.emu:hover {
-    background-color: #4ade80;
-    color: white;
-    border-color: #4ade80;
-}
-
-.login {
-    color: #0ea5e9;
-    border-bottom-style: solid;
-}
-
-.login:hover {
-    background-color: #0ea5e9;
-    color: white;
-    border-color: #0ea5e9;
-}
-
-.signup {
-    color: #eab308;
-    border-bottom-style: solid;
-}
-
-.signup:hover {
-    background-color: #eab308;
-    color: white;
-    border-color: #eab308;
-}
-
-/* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -144,58 +153,61 @@ main {
 
 .hero h1 {
     font-size: 36px;
-    color: #fff;
+   color: #fff
 }
 
 .hero p {
     font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
-    font-family: "Kode Mono", monospace;
+  font-family: "Kode Mono", monospace;
 }
 
-.roms2, .button a {
-    background-color: #1E0B41;
-    color: #EF4444;
-    border-bottom-style: solid;
-    font-family: "Kode Mono", monospace;
+.roms2,.button a{
+  background-color: #1E0B41;
+  color: #EF4444;
+  border-bottom-style: solid;
+  font-family: "Kode Mono", monospace;
 }
 
 .roms2:hover {
-    background-color: #EF4444;
-    color: white;
-    border-color: #EF4444;
-    transition: color 0.3s;
+  background-color: #EF4444;
+  color: white;
+  border-color: #EF4444;
+  transition: color 0.3s;
 }
 
-.games2, .button a {
-    background-color: #1E0B41;
-    color: #4ade80;
-    border-bottom-style: solid;
-    font-family: "Kode Mono", monospace;
+.games2, .button a{
+  background-color: #1E0B41;
+  color: #4ade80;
+  border-bottom-style: solid;
+  font-family: "Kode Mono", monospace;
 }
 
 .games2:hover {
-    background-color: #4ade80;
-    color: white;
-    border-color: #4ade80;
-    transition: color 0.3s;
+  background-color: #4ade80;
+  color: white;
+  border-color: #4ade80;
+  transition: color 0.3s;
 }
 
-.about, .features {
+.about,
+.features {
     margin-bottom: 30px;
 }
 
-.about h2, .features h2 {
+.about h2,
+.features h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fff;
+  color: #fff
 }
 
-.about p, .features ul {
+.about p,
+.features ul {
     font-size: 16px;
     color: #fff;
-    font-family: "Kode Mono", monospace;
+  font-family: "Kode Mono", monospace;
 }
 
 .about {
@@ -237,53 +249,6 @@ main {
     }
 }
 
-/* Emulator Container */
-.emulator-container {
-    text-align: center;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#screen {
-    width: 460px; /* Adjust width to fit the frame */
-    height: 306px; /* Adjust height to fit the frame */
-    margin: 0 auto;
-    border: 10px solid #1E0B41;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: #1E0B41;
-}
-
-.placeholder {
-    width: 460px; /* Match width of canvas */
-    height: 306px; /* Match height of canvas */
-    border: 10px solid #1E0B41;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: #1E0B41;
-    margin: 0 auto;
-}
-
-.bigbutton {
-    background-color: #1E0B41;
-    color: #fb923c;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    font-family: "Kode Mono", monospace;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Footer */
 footer {
     text-align: center;
     background-color: #1E0B41;
@@ -301,13 +266,19 @@ footer a:hover {
     text-decoration: none; /* Remove underline on hover */
 }
 
-
 /*Keyboard*/
 
 .keyboard {
+    position: fixed;  /* Makes the keyboard stay at the bottom of the screen */
+    bottom: 0;        /* Aligns it at the bottom */
+    left: 0;          /* Aligns it to the left edge */
+    right: 0;         /* Aligns it to the right edge */
+    display: flex;
+    justify-content: center; /* Center the keys container horizontally */
     padding: 20px;
     border-radius: 10px;
     border: 1px solid black;
+   
 }
 
 .key-row {
